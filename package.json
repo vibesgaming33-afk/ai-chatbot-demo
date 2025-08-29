@@ -1,0 +1,12 @@
+﻿{
+  "name": "ai-chatbot-demo",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev:web": "npm run dev -w apps/web",
+    "dev:server": "npm run dev -w apps/server",
+    "dev": "npm run dev:server & npm run dev:web",
+    "build": "npm run build -w apps/server && npm run build -w apps/web",
+    "start": "npm start -w apps/server"
+  }
+}
