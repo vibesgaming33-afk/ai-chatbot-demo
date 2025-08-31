@@ -1,0 +1,5 @@
+﻿{
+  "watch": ["src"],
+  "ext": "ts,js,json",
+  "exec": "node --env-file=.env --loader ts-node/esm"
+}
